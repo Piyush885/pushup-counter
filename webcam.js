@@ -40,9 +40,9 @@ async function videoReady() {
 async function setup() {
   var msg = new SpeechSynthesisUtterance('Loading, please wait...');
   window.speechSynthesis.speak(msg);
-  createCanvas(640, 480);
+  createCanvas(1200, 600);
   video = createCapture(VIDEO, videoReady);
-  //video.size(960, 720);
+  video.size(1200 , 600);
   video.hide()
 
   await init();
@@ -55,7 +55,7 @@ async function getPoses() {
 }
 
 function draw() {
-  background(440);
+  background(1000);
   translate(width, 0);
   scale(-1, 1);
   image(video, 0, 0, video.width, video.height);
