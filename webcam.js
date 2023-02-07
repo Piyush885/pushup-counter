@@ -55,7 +55,7 @@ async function getPoses() {
 }
 
 function draw() {
-  background(220);
+  background(440);
   translate(width, 0);
   scale(-1, 1);
   image(video, 0, 0, video.width, video.height);
